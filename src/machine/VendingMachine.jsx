@@ -7,8 +7,8 @@ import FlexCenteredColumnContainer from "../display-containers/FlexCenteredColum
 import FlexCenteredContainer from "../display-containers/FlexCenteredContainer";
 
 const StyledVendingMachine = styled(FlexCenteredContainer)`
-    height: 420px;
-    width: 350px;
+    height: 460px;
+    width: 400px;
     border: solid black 5px;
     border-radius: 3px;
     margin-right: 50px;

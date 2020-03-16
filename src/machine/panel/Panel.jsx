@@ -6,7 +6,7 @@ import FlexCenteredColumnContainer from "../../display-containers/FlexCenteredCo
 
 const StyledPanel = styled(FlexCenteredColumnContainer)`
     border: 3px solid black;
-    height: 390px;
+    height: 420px;
     width: 120px;
     background: #d3d3d3;
 `;
