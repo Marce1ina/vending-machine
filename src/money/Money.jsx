@@ -14,13 +14,13 @@ const StyledMoney = styled.div`
             case 1:
                 return "#D3D3D3";
             case 2:
-                return "#FFD700";
+                return "#FFFEC0";
             case 5:
                 return "#C0C0C0";
             case 10:
-                return "#B38B6D";
+                return "#ffe8be";
             case 20:
-                return "#B768A2";
+                return "#e8e7ff";
             default:
                 return "#C0C0C0";
         }

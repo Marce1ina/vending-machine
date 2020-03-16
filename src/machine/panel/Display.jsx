@@ -7,7 +7,7 @@ const StyledDisplay = styled(FlexCenteredContainer)`
     height: 40px;
     width: 70px;
     font-size: 12px;
-    background: #98fb98;
+    background: #d7fdd8;
 `;
 
 const Display = ({ text }) => <StyledDisplay>{text}</StyledDisplay>;

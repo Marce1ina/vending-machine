@@ -29,7 +29,7 @@ const StyledKeysRow = styled(FlexCenteredContainer)`
 const StyledKeyboard = styled(FlexCenteredColumnContainer)`
     padding: 2px;
     border: 2px solid black;
-    background: beige;
+    background: #fffec0;
 `;
 
 const Keyboard = ({ typeNumber }) => (

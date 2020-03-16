@@ -7,7 +7,7 @@ const StyledProduct = styled(FlexCenteredColumnContainer)`
     border: 2px solid black;
     height: 38px;
     width: 45px;
-    background: #d1edf2;
+    background: #c9f8fe;
     font-size: 16px;
     font-weight: 600;
 `;
