@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import MoneyInput from "./MoneyInput.jsx";
-import CreditDisplay from "./CreditDisplayContainer.jsx";
+import Display from "./DisplayContainer.jsx";
+import Keyboard from "./KeyboardContainer.jsx";
 import FlexCenteredColumnContainer from "../../display-containers/FlexCenteredColumnContainer";
 
 const StyledPanel = styled(FlexCenteredColumnContainer)`
@@ -15,7 +16,8 @@ const Panel = () => (
     <StyledPanel>
         <MoneyInput type="coin" />
         <MoneyInput type="bill" />
-        <CreditDisplay />
+        <Display />
+        <Keyboard />
     </StyledPanel>
 );
 

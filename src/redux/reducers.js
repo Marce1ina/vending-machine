@@ -1,8 +1,9 @@
-import { INSERT_MONEY } from "./actions";
+import { INSERT_MONEY, TYPE_NUMBER } from "./actions";
 
 const initialState = {
     credit: 0,
-    availableValues: [1, 2, 5, 10, 20]
+    availableValues: [1, 2, 5, 10, 20],
+    choosenNumber: undefined
 };
 
 export default function vendingMachineApp(state = initialState, action) {
@@ -18,6 +19,17 @@ export default function vendingMachineApp(state = initialState, action) {
                     ...availableValues.slice(valueIndex + 1, availableValues.length)
                 ],
                 credit: credit + availableValues[valueIndex]
+            };
+
+        case TYPE_NUMBER:
+            return {
+                ...state,
+                choosenNumber:
+                    state.choosenNumber === undefined
+                        ? action.number
+                        : `${state.choosenNumber}`.length === 1
+                        ? parseInt(`${state.choosenNumber}${action.number}`)
+                        : undefined
             };
         default:
             return state;

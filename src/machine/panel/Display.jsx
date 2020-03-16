@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import FlexCenteredContainer from "../../display-containers/FlexCenteredContainer";
 
-const StyledCreditDisplay = styled(FlexCenteredContainer)`
+const StyledDisplay = styled(FlexCenteredContainer)`
     border: 3px solid black;
     height: 40px;
     width: 70px;
     font-size: 12px;
-    background: #008000;
+    background: #98fb98;
 `;
 
-const CreditDisplay = ({ credit }) => <StyledCreditDisplay>Credit: {credit}</StyledCreditDisplay>;
+const Display = ({ text }) => <StyledDisplay>{text}</StyledDisplay>;
 
-export default CreditDisplay;
+export default Display;
